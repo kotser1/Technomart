@@ -1,42 +1,43 @@
 /* Variables */
 
 :root {
-	--white: #FFFFFF;
-	--black: #000000;
-	--basic-red: #EE3643;
-	--basic-red-dark: #BA2732;
+  --white: #FFFFFF;
+  --black: #000000;
+  --basic-red: #EE3643;
+  --basic-red-dark: #BA2732;
+  --basic-red-extra: #CA2C37;
   --basic-green: #63A63E;
   --basic-green-dark: #367315;
   --basic-green-light: #5FBB2D;
   --basic-green-extra: #518534;
-	--basic-blue: #32425C;
-	--basic-blue-dark: #293449;
+  --basic-blue: #32425C;
+  --basic-blue-dark: #293449;
   --basic-blue-darker: #1D2739;
   --basic-blue-active: #161D29;
-	--basic-gray: #F3F7F9;
-	--basic-gray-light: #F1F5F7;
-	--basic-gray-dark: #A9A9A9;
-	--gray: #F2F6F8;
-	--basic-brown-light: #F9F5F0;
-	--basic-yellow: #FFD180;
+  --basic-gray: #F3F7F9;
+  --basic-gray-light: #F1F5F7;
+  --basic-gray-dark: #A9A9A9;
+  --gray: #F2F6F8;
+  --basic-brown-light: #F9F5F0;
+  --basic-yellow: #FFD180;
 
-	--special-yellow: #FFBF47;
-	--special-yellow-light: #FFC047;
-	--special-blue-light: #3BBCE3;
-	--special-magenta: #DC91D8;
-	--special-green: #8ED78F;
-	--special-gray-light: #EAEAEA;
-	--special-gray: #C5C5C5;
-	--special-gray-hover: #3D546F;
+  --special-yellow: #FFBF47;
+  --special-yellow-light: #FFC047;
+  --special-blue-light: #3BBCE3;
+  --special-magenta: #DC91D8;
+  --special-green: #8ED78F;
+  --special-gray-light: #EAEAEA;
+  --special-gray: #C5C5C5;
+  --special-gray-hover: #3D546F;
+  --special-blue: #212A3A;
 
-	--gray-opacity: rgba(0, 0, 0, 0.25);
-	--light-gray-opacity: rgba(0, 0, 0, 0.01);
-	--white-opacity-30: rgba(255, 255, 255, 0.3);
+  --gray-opacity: rgba(0, 0, 0, 0.25);
+  --light-gray-opacity: rgba(0, 0, 0, 0.01);
+  --white-opacity-30: rgba(255, 255, 255, 0.3);
   --white-opacity-50: rgba(255, 255, 255, 0.5);
 }
 
 body  {
-  min-width: 960px;
   margin: 0;
   padding: 0 ;
   font-family: "PT Sans", Arial, sans-serif;
@@ -58,7 +59,6 @@ img {
   background: var(--basic-gray);
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 400;
-
 }
 
 .header-top {
@@ -68,10 +68,10 @@ img {
 }
 
 .header-top-logo {
-min-width: 220px;
-min-height: 47px;
-background-color: var(--basic-red);
-box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  min-width: 220px;
+  min-height: 47px;
+  background-color: var(--basic-red);
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 
 .header-top-logo:active {
@@ -80,6 +80,7 @@ box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 
 .header-top a {
   color: var(--white);
+  text-decoration: none;
 }
 
 .header-top a:active{
@@ -90,18 +91,24 @@ box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
   background-color: var(--basic-blue-dark);
 }
 
+.site-search input:focus {
+  background-color: var(--white);
+}
+
 .site-search button {
   visibility: hidden;
 }
 
-
 .header-bookmarks:active {
   background-color: var(--basic-blue-active) ;
-
 }
 
 .header-buy-link {
   background-color: var(--basic-green);
+}
+
+.header-buy-link:hover {
+  background-color: var(--basic-green-light);
 }
 
 .header-text {
@@ -249,6 +256,14 @@ box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
   font-size: 14px;
   line-height: 18px;
   text-align: center;
+}
+
+.button:hover {
+  background-color: var(--basic-red-extra);
+}
+
+.button:active {
+  background-color: var(--basic-red-dark);
 }
 
 .section-top {
@@ -441,6 +456,16 @@ box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
   text-decoration: none;
 }
 
+.footer-top-item a:hover,
+.footer-middle a:hover {
+  text-decoration: underline;
+}
+
+.footer-top-item a:active,
+.footer-middle a:active {
+  opacity: 0.5;
+}
+
 .footer-bottom p {
   font-size: 16px;
   line-height: 18px;
@@ -450,6 +475,15 @@ box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 .footer-bottom a {
   text-decoration: none;
   color: var(--basic-yellow);
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom a:active {
+  color: var(--basic-red);
+  text-decoration: none;
 }
 
 .footer-bottom ul {
