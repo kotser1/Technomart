@@ -31,6 +31,7 @@
   --special-gray-extra: #E5E5E5;
   --special-gray-hover: #3D546F;
   --special-blue: #212A3A;
+  --special-brown: #F7F3EC;
 
   --gray-opacity: rgba(0, 0, 0, 0.25);
   --light-gray-opacity: rgba(0, 0, 0, 0.01);
@@ -53,6 +54,16 @@ img {
   height: auto;
 }
 
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
 
 /* Main navigation */
 
@@ -60,17 +71,27 @@ img {
   background: var(--basic-gray);
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 400;
+
+  display: grid;
 }
 
 .header-top {
   background-color: var(--basic-blue-dark);
+}
+
+.header-top-wrapper {
   font-size: 18px;
   line-height: 24px;
+  display: grid;
+  grid-template-columns: 220px auto auto auto auto;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .header-top-logo {
   min-width: 220px;
-  min-height: 47px;
+  min-height: 42px;
   background-color: var(--basic-red);
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
@@ -112,6 +133,15 @@ img {
   background-color: var(--basic-green-light);
 }
 
+.header-middle {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 153px;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .header-text {
   font-size: 16px;
   font-style: italic;
@@ -139,6 +169,13 @@ img {
   color: var(--basic-blue);
 }
 
+.profile-section {
+  justify-self: center;
+  padding-top: 41px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .login-link,
 .signup-link,
 .profile-link {
@@ -150,6 +187,10 @@ img {
   background-color: var(--white);
 }
 
+.profile-link {
+  grid-column: 1 / -1;
+}
+
 .orders-link,
 .account-link {
   font-size: 16px;
@@ -159,13 +200,22 @@ img {
   text-align: center;
 }
 
+.header-bottom {
+  margin-bottom: 60px;
+}
+
 .header-bottom nav {
   background-color: var(--basic-blue);
   box-shadow: inset 0px -5px 0px var(--basic-blue-dark);
+  width: 940px;
+  margin: 0 auto;
 }
 
 .site-navigation {
   list-style: none;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
 }
 
 .site-navigation a {
@@ -187,16 +237,34 @@ img {
 
 .container {
   background-color: var(--white);
+
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .offers {
   background-color: var(--white);
   font-family: "Cuprum", Arial, sans-serif;
   color: var(--white);
+  margin-top: 59px;
+  margin-bottom: 70px;
 }
 
 .offers-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+}
+
+.offers-list li:last-child {
+  grid-column: 1 / 3;
+  grid-row: 2 / 4;
 }
 
 .offers-item {
@@ -245,6 +313,7 @@ img {
 
 .slider-top {
   background: var(--gray-opacity);
+  margin-top: -330px;
 }
 
 .slider-top h3 {
@@ -279,6 +348,9 @@ img {
 
 .section-top {
   background-color: var(--basic-brown-light);
+
+  display: grid;
+  grid-template-columns: auto 220px;
 }
 
 .section-top h2 {
@@ -294,7 +366,19 @@ img {
   list-style: none;
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: 700;
+  margin: 20px 0 70px 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
 }
+
+.products-list.popular {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+}
+
 
 .products-item {
   border: 1px solid var(--special-gray-light);
@@ -371,12 +455,28 @@ img {
 }
 
 .brands-list {
+  display: grid;
+  grid-template-columns: repeat(4, 220px);
+  gap: 20px;
   list-style: none;
+  margin: 20px 0 70px 0;
+  padding: 0;
 }
 
 .brands-item {
   border: 1px solid #EAEAEA;
   box-sizing: border-box;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: 240px auto;
+  margin-bottom: 70px;
+}
+
+.services h2,
+.services p {
+  grid-column: 1 / -1;
 }
 
 .services,
@@ -405,6 +505,12 @@ img {
   color: var(--basic-blue);
 }
 
+.services-tabs {
+  display: grid;
+  margin-bottom: 100px;
+  margin-top: 70px;
+}
+
 .services-button {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
@@ -422,9 +528,16 @@ img {
   background-color: var(--white);
 }
 
-.company,
-.contacts {
+.services-list {
+  padding-left: 80px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 180px;
   background-color: var(--white);
+  margin-bottom: 70px;
 }
 
 .partners {
@@ -436,8 +549,17 @@ img {
 
 /* Catalog page */
 
+.page-catalog {
+  display: grid;
+  grid-template-columns: 220px auto;
+  grid-template-rows: 40px 90px 38px 1fr min-content;
+}
+
 .breadcrumbs {
+  grid-column: 1 / -1;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .breadcrumbs li {
@@ -453,6 +575,7 @@ img {
 }
 
 .catalog-heading {
+  grid-column: 1 / -1;
   font-family: "Cuprum", Arial, sans-serif;
   color: var(--basic-blue);
   font-size: 30px;
@@ -461,6 +584,32 @@ img {
   text-transform: uppercase;
   background-color: var(--gray);
 }
+
+.filter {
+  grid-row: 3 / -2;
+  grid-column: 1 / 2;
+}
+
+.filter h2 {
+  background-color: var(--special-brown);
+}
+
+.sorting {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+  background-color: var(--special-brown);
+}
+
+.products {
+  grid-row: 4 / 5;
+  grid-column: 2 / 3;
+}
+
+.section-text {
+  grid-row: 5 /-1;
+  grid-column: 1 / -1;
+}
+
 
 .filter h2,
 .sorting h2{
@@ -529,11 +678,33 @@ img {
 /* Footer */
 
 .page-footer {
+  display: grid;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
   background-color: var(--basic-blue);
+}
+
+.footer-container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer-middle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .footer-top-logo {
@@ -594,4 +765,18 @@ img {
 
 .footer-bottom ul {
   list-style: none;
+}
+
+.footer-email,
+.footer-copyright {
+  width: 140px;
+  justify-self: end;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
