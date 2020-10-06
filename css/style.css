@@ -68,11 +68,10 @@ img {
 /* Main navigation */
 
 .main-header {
+  display: grid;
   background: var(--basic-gray);
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 400;
-
-  display: grid;
 }
 
 .header-top {
@@ -348,7 +347,6 @@ img {
 
 .section-top {
   background-color: var(--basic-brown-light);
-
   display: grid;
   grid-template-columns: auto 220px;
 }
