@@ -234,9 +234,11 @@ img {
 
 /* Content */
 
-.container {
+.main-content {
   background-color: var(--white);
+}
 
+.container {
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
@@ -466,6 +468,10 @@ img {
   box-sizing: border-box;
 }
 
+.gray {
+  background-color: var(--basic-gray-light);
+}
+
 .services {
   display: grid;
   grid-template-columns: 240px auto;
@@ -497,6 +503,10 @@ img {
 .services h2,
 .section-text h2 {
   color: var(--black);
+}
+
+.section-text p{
+  margin: 0;
 }
 
 .services-item h3 {
