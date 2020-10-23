@@ -381,7 +381,7 @@ img {
 
 .site-navigation {
   list-style: none;
-  margin: 0 43px;
+  margin: 0 15px;
   padding: 0;
   /* height: 60px; */
   display: flex;
@@ -403,6 +403,8 @@ img {
   justify-content: center;
   align-items: center;
   height: 100%;
+  padding-left: 28px;
+  padding-right: 28px;
 }
 
 .site-navigation a:hover {
