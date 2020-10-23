@@ -583,6 +583,7 @@ img {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
+  font-weight: 400;
   color: var(--white);
   width: 100px;
   height: 30px;
@@ -592,9 +593,6 @@ img {
   background-color: var(--basic-red);
   transform: rotate(45deg);
   box-sizing: border-box;
-
-  font-weight: 400;
-
 }
 
 .offers-item.sticker-new::after {
