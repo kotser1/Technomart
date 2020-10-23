@@ -338,12 +338,12 @@ img {
 }
 
 .login-link {
-  padding-left: 45px;
+  padding-left: 20px;
   padding-right: 27px;
   position: relative;
 }
 
-.login-link::before {
+/* .login-link::before {
   content: "";
   position: absolute;
   width: 20px;
@@ -352,6 +352,24 @@ img {
   left: 19px;
   background-image: url("../img/icon-login.svg");
   background-repeat: no-repeat;
+} */
+
+.login-link:hover,
+.signup-link:hover {
+  color: var(--basic-red);
+}
+
+.login-link:hover path {
+  fill: var(--special-gray-hover);
+}
+
+.login-link:active,
+.signup-link:active {
+  color: var(--special-gray)
+}
+
+.login-link:active path {
+  fill: var(--special-gray);
 }
 
 .profile-link {
