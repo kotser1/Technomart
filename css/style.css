@@ -2068,6 +2068,10 @@ img {
   border-top: 7px solid var(--basic-red);
 }
 
+.modal-map iframe {
+  border: none;
+}
+
 .modal-close {
   position: absolute;
   right: 11px;
@@ -2099,7 +2103,7 @@ img {
 }
 
 .modal-order {
-  display: none;
+  /* display: none; */
   top: 120px;
   bottom: auto;
   box-sizing: border-box;
@@ -2109,7 +2113,7 @@ img {
 
 }
 
-.modal-order p {
+.modal-order h3 {
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -2121,7 +2125,7 @@ img {
   padding-bottom: 68px;
 }
 
-.modal-order p::before {
+.modal-order h3::before {
   position: absolute;
   content: "";
   width: 66px;
