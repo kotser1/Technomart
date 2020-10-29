@@ -844,7 +844,7 @@ img {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .products-list.popular {
@@ -867,11 +867,16 @@ img {
   min-height: 318px;
   border: 1px solid var(--special-gray-light);
   margin-bottom: 18px;
+  margin-right: 20px;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: stretch;
   overflow: hidden;
+}
+
+.products-item:nth-child(3n+3) {
+  margin-right: 0px;
 }
 
 .products-item a {
@@ -1777,6 +1782,7 @@ img {
 .price-controls {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .price-controls label {
@@ -1799,6 +1805,16 @@ img {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+}
+
+.price-controls::after{
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 1px;
+  top: 20px;
+  left: 105px;
+  background: var(--black);
 }
 
 .filter ul {
