@@ -472,7 +472,8 @@ img {
   padding: 0;
   /* height: 60px; */
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -729,7 +730,7 @@ img {
 .slider-buttons {
   display: flex;
   justify-content: space-between;
-  padding: 18px 24px;
+  padding: 18px 20px 18px 24px;
 }
 
 .slider-button-back {
@@ -1192,7 +1193,7 @@ img {
   position: relative;
 }
 
-.services-item::after {
+.services-item:nth-child(1)::after {
   content: "";
   width: 468px;
   height: 261px;
@@ -1202,6 +1203,30 @@ img {
   position: absolute;
   top: 20px;
   right: 0px;
+}
+
+.services-item:nth-child(2)::after {
+  content: "";
+  width: 389px;
+  height: 283px;
+  background-image: url("../img/guarantee.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  position: absolute;
+  top: -2px;
+  right: -8px;
+}
+
+.services-item:nth-child(3)::after {
+  content: "";
+  width: 465px;
+  height: 285px;
+  background-image: url("../img/credit.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  position: absolute;
+  top: -1px;
+  right: -10px;
 }
 
 .services-item p {
@@ -1478,7 +1503,8 @@ img {
   padding: 0;
   list-style: none;
   display: flex;
-  margin-bottom: 59px;
+  flex-wrap: wrap;
+  margin-bottom: 49px;
 }
 
 .page-item {
@@ -1493,6 +1519,7 @@ img {
   justify-content: center;
   align-items: center;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 .page-item:last-child {
   padding-left: 32px;
