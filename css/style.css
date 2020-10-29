@@ -1944,18 +1944,27 @@ img {
 /* Модальные окна */
 
 .modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+
   color: var(--black);
   background-color: var(--white);
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
 .modal-feedback {
-  /* display: none; */
+  display: none;
+
+  top: 120px;
+  bottom: auto;
   box-sizing: border-box;
   width: 620px;
   height: 430px;
   border-top: 7px solid var(--basic-red);
-  position: relative;
 }
 
 .feedback-form {
@@ -2029,11 +2038,12 @@ img {
 }
 
 .modal-map {
-  /* display: none; */
+  display: none;
+  top: 120px;
+  bottom: auto;
   box-sizing: border-box;
   width: 943px;
   height: 449px;
-  position: relative;
   border-top: 7px solid var(--basic-red);
 }
 
@@ -2068,12 +2078,14 @@ img {
 }
 
 .modal-order {
-  /* display: none; */
+  display: none;
+  top: 120px;
+  bottom: auto;
   box-sizing: border-box;
   width: 620px;
   height: 283px;
   border-top: 7px solid var(--basic-red);
-  position: relative;
+
 }
 
 .modal-order p {
