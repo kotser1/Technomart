@@ -857,8 +857,13 @@ img {
   font-weight: 700;
   margin: 20px 0 52px 0;
   padding: 0;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+}
+
+.main-product-list li {
+  margin-right: 0;
 }
 
 .products-item {
