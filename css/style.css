@@ -2103,7 +2103,7 @@ img {
 }
 
 .modal-order {
-  /* display: none; */
+  display: none;
   top: 120px;
   bottom: auto;
   box-sizing: border-box;
