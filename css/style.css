@@ -885,7 +885,7 @@ img {
 }
 
 .products-item img {
-  margin: 5px auto;
+  margin: 13px auto;
 }
 
 .products-title {
@@ -896,6 +896,9 @@ img {
   text-decoration: none;
   text-align: center;
   margin-bottom: 7px;
+  margin-top: 13px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .products-item span {
@@ -905,6 +908,7 @@ img {
   text-decoration: line-through;
   text-transform: uppercase;
   margin-bottom: 13px;
+  min-height: 18px;
 }
 
 .price {
@@ -966,6 +970,7 @@ img {
   margin-bottom: 10px;
   position: relative;
   padding-left: 23px;
+  cursor: pointer;
 }
 
 .button-buy:hover {
@@ -994,6 +999,7 @@ img {
   border: 3px solid var(--basic-green);
   color: var(--basic-blue);
   outline: none;
+  cursor: pointer;
 }
 
 .button-bookmarks:hover {
