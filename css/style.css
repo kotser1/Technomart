@@ -1238,6 +1238,12 @@ img {
   margin-top: 30px;
 }
 
+.credit-button {
+  display: inline-block;
+  min-width: 195px;
+  margin-top: 25px;
+}
+
 .about {
   display:flex;
   justify-content: space-between;
