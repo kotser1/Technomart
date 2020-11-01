@@ -1100,16 +1100,13 @@ img {
   height: 100%;
 }
 
-.brands-item:hover {
+.brands-item:hover,
+.brands-item:focus-within {
   box-shadow: 0px 0px 20px var(--special-gray-light);
 }
 
 .brands-item:active {
   opacity: 0.5;
-}
-
-.brands-item a:focus {
-  box-shadow: 0px 0px 20px var(--special-gray-light);
 }
 
 .gray {
