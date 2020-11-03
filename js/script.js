@@ -1,10 +1,10 @@
-const popupFeedback = document.querySelector('.modal-feedback');
-const openFeedbackButton = document.querySelector('.contacts-button');
-const closePopupButton = popupFeedback.querySelector('.modal-close');
-const feedbackForm = document.querySelector('.feedback-form');
-const feedbackName = document.querySelector('.feedback-name-field');
-const feedbackEmail = document.querySelector('feedback-email-field');
-const feedbackMessage = document.querySelector('.feedback-message-field');
+var popupFeedback = document.querySelector('.modal-feedback');
+var openFeedbackButton = document.querySelector('.contacts-button');
+var closePopupButton = popupFeedback.querySelector('.modal-close');
+var feedbackForm = document.querySelector('.feedback-form');
+var feedbackName = document.querySelector('.feedback-name-field');
+var feedbackEmail = document.querySelector('feedback-email-field');
+var feedbackMessage = document.querySelector('.feedback-message-field');
 
 let isStorageSupport = true;
 let storageName = "";
@@ -63,9 +63,9 @@ feedbackForm.addEventListener("submit", function (evt) {
 });
 
 
-const popupMap = document.querySelector('.modal-map');
-const openMapButton = document.querySelector('.map-preview-link');
-const closePopupButton = popupMap.querySelector('.modal-close');
+var popupMap = document.querySelector('.modal-map');
+var openMapButton = document.querySelector('.map-preview-link');
+var closePopupButton = popupMap.querySelector('.modal-close');
 
 openMapButton.addEventListener('click', function (evt) {
   evt.preventDefault();
