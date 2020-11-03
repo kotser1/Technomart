@@ -223,7 +223,7 @@
           <button class="services-button" aria-label="Перейти к информации о кредитовании">Кредит</button>
         </div>
         <div class="services-list">
-          <div class="services-item">
+          <div class="services-item services-item-current">
             <h3>Доставка</h3>
             <p class="services-desc">
               Мы с удовольствием доставим ваш товар прямо<br>
@@ -231,7 +231,7 @@
               Ведь мы неплохо заработаем,<br>
               поднимая его на ваш этаж!</p>
           </div>
-          <div class="services-item visually-hidden">
+          <div class="services-item">
             <h3>Гарантия</h3>
             <p class="services-desc">
               Если купленный у нас товар поломается или заискрит, <br>
@@ -241,7 +241,7 @@
               Дом уж восстановите как-нибудь сами.
             </p>
           </div>
-          <div class="services-item visually-hidden">
+          <div class="services-item">
             <h3>Кредит</h3>
             <p class="services-desc">
               Залезть в долговую яму стало проще! <br>
@@ -270,7 +270,7 @@
     <section class="contacts">
       <h2>Контакты</h2>
       <p>Вы можете забрать товар сами,<br>заехав в наш офис:</p>
-      <a href="#">
+      <a class="map-preview-link" href="#">
         <img class="map-preview" src="img/map.png" width="300" height="158" alt="Адрес компании: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
       </a>
       <a class="button contacts-button" href="#" aria-label="Открыть форму обратной связи">Заблудились? Напишите нам!</a>
@@ -350,15 +350,15 @@
   <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
     <div class="feedback-name">
       <label for="your-name">Ваше имя:</label>
-      <input id="your-name" type="text" placeholder="Имя Фамилия">
+      <input class="feedback-name-field" id="your-name" type="text" name="user-name" placeholder="Имя Фамилия">
     </div>
     <div class="feedback-email">
       <label for="your-email">Ваш e-mail:</label>
-      <input id="your-email" type="text" placeholder="email@example.com">
+      <input class="feedback-email-field" id="your-email" type="text" name="user-email" placeholder="email@example.com">
     </div>
     <div class="feedback-message">
       <label for="message">Текст письма:</label>
-      <textarea id="message">В свободной форме</textarea>
+      <textarea class="feedback-message-field" id="message" name="message" placeholder="В свободной форме"></textarea>
     </div>
     <div class="modal-button-wrapper">
       <button class="button modal-button" type="submit" aria-label="Отправить сообщение в компанию">Отправить</button>
@@ -383,5 +383,7 @@
   <button class="modal-close" type="button" aria-label="Закрыть"></button>
 </section>
 
+<script src="js/script.js"></script>
+<script src="js/order.js"></script>
 </body>
 </html>
