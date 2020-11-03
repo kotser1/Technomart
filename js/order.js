@@ -1,15 +1,17 @@
-var popupOrder = document.querySelector('.modal-order');
-var openOrderButton = document.querySelectorAll('.button-buy');
-var closePopupButton = popupOrder.querySelector('.modal-close');
+const popupOrder = document.querySelector('.modal-order');
+const openOrderButton = document.querySelectorAll('.button-buy');
+const closeOrderPopupButton = popupOrder.querySelector('.modal-close');
 
-for (var i = 0; i < openOrderButton.length; i++) {
-  openOrderButton[i].addEventListener('click', function (evt) {
-    evt.preventDefault();
-    popupOrder.classList.add('modal-show');
-  });
+let buyButton = function (evt) {
+  evt.preventDefault();
+  popupOrder.classList.add('modal-show');
+};
+
+for (let i = 0; i < openOrderButton.length; i++) {
+  openOrderButton[i].onclick = buyButton;
 }
 
-closePopupButton.addEventListener('click', function () {
+closeOrderPopupButton.addEventListener('click', function () {
   popupOrder.classList.remove('modal-show');
 })
 
