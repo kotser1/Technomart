@@ -62,6 +62,7 @@ feedbackForm.addEventListener("submit", function (evt) {
   }
 });
 
+//Карта
 
 const popupMap = document.querySelector('.modal-map');
 const openMapButton = document.querySelector('.map-preview-link');
