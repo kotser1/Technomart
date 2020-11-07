@@ -630,11 +630,11 @@ img {
   background-color: var(--special-yellow-light);
 }
 
-.offers-list-bottom li:nth-child(2) {
+.offers-item-bottom:nth-child(2) {
   background-color: var(--special-green);
 }
 
-.offers-list-bottom li:nth-child(2)::before {
+.offers-item-bottom:nth-child(2)::before {
   content: "";
   position: absolute;
   width: 59px;
@@ -644,11 +644,11 @@ img {
   background-image: url("../img/icon-4.svg");
 }
 
-.offers-list-bottom li:nth-child(3) {
+.offers-item-bottom:nth-child(3) {
   background-color: var(--special-yellow-light);
 }
 
-.offers-list-bottom li:nth-child(3)::before {
+.offers-item-bottom:nth-child(3)::before {
   content: "";
   position: absolute;
   width: 78px;
