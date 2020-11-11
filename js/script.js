@@ -150,3 +150,19 @@ buttonBack.addEventListener('click', function (evt) {
   controlFirst.classList.toggle('slider-control-current');
   controlSecond.classList.toggle('slider-control-current');
 });
+
+controlFirst.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  slideFirst.classList.toggle('slide-current');
+  slideSecond.classList.toggle('slide-current');
+  controlFirst.classList.toggle('slider-control-current');
+  controlSecond.classList.toggle('slider-control-current');
+});
+
+controlSecond.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  slideFirst.classList.toggle('slide-current');
+  slideSecond.classList.toggle('slide-current');
+  controlFirst.classList.toggle('slider-control-current');
+  controlSecond.classList.toggle('slider-control-current');
+});
